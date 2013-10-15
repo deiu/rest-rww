@@ -148,7 +148,7 @@
 	        <li class="next">Linked Data Platform - <a href="http://www.w3.org/2012/ldp/wiki/Main_Page" target="blank">LDP</a></li>
 	    </ul>
 		<p><br/></p>
-		<p class="note" id="star"><span>*</span> WAC is not yet a standard</p>
+		<p class="note next" id="star"><span>*</span> WAC is not yet a standard</p>
 		<style>
 			#star span {
 				color:red;
@@ -225,7 +225,7 @@
 			<li>advisor?</li>
 			<li class="next"><strong>Yes, advisor!</strong></li>
 			<li class="next">PhD = <strong><em>Sci</em></strong>-Fi (results > blah blah)</li>
-			<li class="next"><em>very</em> personal experience</li>
+			<li class="next"><em>very</em> personal experience over at least 3 years</li>
 			<li class="next">take the initiative, be creative!</li>
 		</ul>
 		<p class="note"></p>
@@ -245,6 +245,7 @@
 			<li class="next">others can study how your code works and change it to fit their needs</li>
 			<li class="next">reuse -> <code><mark class="important">improve</mark></code> -> contribute back to the original project</li>
 			<li class="next">greatly helps the community</li>
+			<li class="next">applied to the Web -> <em>"view source"</em></li>
 		</ul>
 		<p class="note"></p>
 	</div></section>
@@ -279,7 +280,7 @@
 	    <div id="header">REST / RWW.IO</div>
 		<h2>Privacy?</h2>
 		<div align="center"><img src="pictures/panopticon.jpg" alt="Panopti">
-		<p><em>Panopticon</em> - allows a watchman to observe people without their knowledge.</p>
+		<p><em>Panopticon</em> - a watchman observes people without their knowledge</p>
 		</div>
 	</div></section>
 	<section class="slide"><div>
@@ -289,17 +290,18 @@
 		<br/>
         <ul>
 			<li>Identity? -> <span class="next"><strong>Web Identity and Discovery (WebID) - standard</strong></span></li>
-			<li class="next">Privacy? -> <span class="next"><strong>Web Access Control Lists (WebACL) - standard</strong></span></li>
+			<li class="next">Privacy? -> <span class="next"><strong>Web Access Control Lists (WebACL) - to be standardized</strong></span></li>
 			<li class="next">Data silos? -> <span class="next"><strong>Read/Write personal Web data storage (RWW.IO) - service</strong></span></li>
 		</ul>
         <p class="note next">RWW.IO incorporates previous standards</p>
 	</div></section>
+<!-- WebID -->
 	<section class="slide"><div>
         <img id="logo" src="pictures/logo.png" alt="Ecole Mines Telecom" />
 	    <div id="header">REST / RWW.IO</div>
 		<h2>Identity -> WebID / WebID-TLS</h2>
         <ul>
-			<li>decentralized identity</li>
+			<li>decentralized identity based on HTTP URIs</li>
 			<li class="next"><strong><em>you</em></strong> control your profile data (where it is stored / who can access it)</li>
 			<li class="next"><em>extremely</em> rich profile (Web apps preferences, regionalization, etc.)</li>
 			<li class="next">currently in a standardization process</li>
@@ -307,6 +309,19 @@
 		</ul>
 		<p class="note next">More info here: <a href="http://www.w3.org/wiki/WebID" target="blank">http://www.w3.org/wiki/WebID</a></p>
 	</div></section>
+	<section class="slide"><div>
+        <img id="logo" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+	    <div id="header">REST / RWW.IO</div>
+	    <h2>WebID</h2>
+		<div align="center"><img src="pictures/WebID.png" alt="WebID" style="height:420px;"></div>
+	</div></section>
+	<section class="slide"><div>
+        <img id="logo" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+	    <div id="header">REST / RWW.IO</div>
+	    <h2>WebID-TLS</h2>
+		<div align="center"><img src="pictures/webid-tls.png" alt="WebID-TLS"></div>
+	</div></section>
+<!-- WAC -->
 	<section class="slide"><div>
         <img id="logo" src="pictures/logo.png" alt="Ecole Mines Telecom" />
 	    <div id="header">REST / RWW.IO</div>
@@ -325,11 +340,18 @@
 	<section class="slide"><div>
         <img id="logo" src="pictures/logo.png" alt="Ecole Mines Telecom" />
 	    <div id="header">REST / RWW.IO</div>
+	    <h2>WebACL</h2>
+		<div align="center"><img src="pictures/WebACL.jpg" alt="WebACL" style="height:420px;"></div>
+	</div></section>
+<!-- RWW -->
+	<section class="slide"><div>
+        <img id="logo" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+	    <div id="header">REST / RWW.IO</div>
 		<h2>Data silos -> RWW.IO</h2>
         <ul>
 			<li>Linked Data-enabled personal storage platform <small>(<a href="http://www.freedomboxfoundation.org/" target="blank">FreedomBox</a>)</small> but not only!</li>
 			<li class="next">built on REST principles <small>(HEAD, GET, POST, PUT, DELETE, MKCOL, OPTIONS)</small></li>
-			<li class="next">no <em>proprietary</em> API!</li>
+			<li class="next">no <em>dedicated</em> API!</li>
 			<li class="next">relies heavily on <a href="http://www.w3.org/TR/cooluris/#conneg" target="blank"><em>content negotiation</em></a> <small>(supported types: RDF, text, html, js, css, images)</small></li>
 			<li class="next">supports many RDF media types <small>(<a href="https://en.wikipedia.org/wiki/Turtle_(syntax)" target="blank">Turtle</a>, <a href="https://en.wikipedia.org/wiki/RDF/XML" target="blank">RDF/XML</a>, <a href="https://en.wikipedia.org/wiki/Notation3" target="blank">Notation3</a>, <a href="https://en.wikipedia.org/wiki/N-Triples" target="blank">N-triples</a>, <a href="https://en.wikipedia.org/wiki/JSON-LD" target="blank">JSON-LD</a>)</small></li>
 			<li class="next">RDF resources can <em>also</em> be retrieved and manipulated using <a href="https://en.wikipedia.org/wiki/Sparql" target="blank">SPARQL</a></li>
@@ -371,7 +393,7 @@
         <img id="logo" src="pictures/logo.png" alt="Ecole Mines Telecom" />
 	    <div id="header">REST / RWW.IO</div>
 		<h2>Web app example: Linked Data Calendar</h2>
-		<div align="center"><img src="pictures/ld-cal.jpg" alt="Linked Data Calendar">
+		<div align="center"><img src="pictures/ld-cal.jpg" alt="Linked Data Calendar" style="height:420px;">
 		</div>		
 	</div></section>
 <!-- REST code examples -->
@@ -451,7 +473,7 @@
 		<pre>
             <code>curl -v -X POST \ <mark class="comment">&lt;- request type</mark>
         -H "Content-Type:text/turtle" \ <mark class="comment">&lt;- content type</mark>
-        -d "&lt;a&gt; &lt;b&gt; &lt;c&gt; ." \ <mark class="comment">&lt;- the body</mark>
+        -d "&lt;s&gt; &lt;p&gt; &lt;o&gt; ." \ <mark class="comment">&lt;- the body</mark>
         http://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
 		</pre>    
 		<strong>Response:</strong>
@@ -481,7 +503,7 @@
             HTTP/1.1 <strong>200</strong> OK<br/>
             Content-Type: <mark class="important">text/turtle</mark><br/>
             @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .<br/>
-            &lt;a&gt; &lt;b&gt; &lt;c&gt; .
+            &lt;s&gt; &lt;p&gt; &lt;o&gt; .
         </pre>
         <style>
             .response {
