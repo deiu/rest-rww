@@ -425,7 +425,7 @@
         <strong>Curl request:</strong>
 		<pre>
             <code>curl -v -X HEAD \ <mark class="comment">&lt;- request type</mark>
-            http://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
+            https://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
 		</pre>    
         <strong>HTTP request:</strong>
 		<pre class="response">
@@ -449,7 +449,7 @@
         <strong>Curl request:</strong>
 		<pre>
             <code>curl -v -X OPTIONS \ <mark class="comment">&lt;- request type</mark>
-        http://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
+        https://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
 		</pre>
 		<strong>Response:</strong>
         <pre class="response">
@@ -474,13 +474,13 @@
             <code>curl -v -X POST \ <mark class="comment">&lt;- request type</mark>
         -H "Content-Type:text/turtle" \ <mark class="comment">&lt;- content type</mark>
         -d "&lt;s&gt; &lt;p&gt; &lt;o&gt; ." \ <mark class="comment">&lt;- the body</mark>
-        http://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
+        https://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
 		</pre>    
 		<strong>Response:</strong>
         <pre class="response">
             HTTP/1.1 <strong>201</strong> Created<br/>
             User: <mark>https://my-profile.eu/people/deiu/card#me</mark><br/>
-            Link: &lt;http://name.rww.io/.acl.data&gt;; rel=<mark class="important">acl</mark>
+            Link: &lt;https://name.rww.io/.acl.data&gt;; rel=<mark class="important">acl</mark>
         </pre>
         <style>
             .response {
@@ -495,7 +495,7 @@
         <strong>Curl request:</strong>
 		<pre>
             <code>curl -v -H "Accept:text/turtle" \ <mark class="comment">&lt;- content type</mark>
-        http://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
+        https://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
 		</pre>    
 		<br/>
 		<strong>Response:</strong>
@@ -518,7 +518,7 @@
         <strong>Curl request:</strong>
 		<pre>
             <code>curl -v -X DELETE \ <mark class="comment">&lt;- request type</mark>
-        http://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
+        https://<mark>name</mark>.rww.io/data <mark class="comment">&lt;- the resource URI</mark></code>
 		</pre>
 		<br/>
 		<strong>Response:</strong>
